@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE17975D-D22E-4D2D-8A82-2E5C3B2E2669}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Testsparker</RootNamespace>
+    <AssemblyName>Testsparker</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <AutoParameterizationWebConfigConnectionStrings>false</AutoParameterizationWebConfigConnectionStrings>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdPartyLibraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\PublishProfiles\wwwroot_AspnetTestsparkerComTest.pubxml" />
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="crossdomain.xml" />
+    <None Include="Order.aspx.bak" />
+    <Content Include="selenium\form\no-avatar.png" />
+    <Content Include="statics\logo.jpg" />
+    <Content Include="statics\qrcode.png" />
+    <Content Include="statics\style.css" />
+    <Content Include="statics\Web.config" />
+    <Content Include="js\Web.config" />
+    <Content Include="main.master" />
+    <Content Include="panel\Web.config" />
+    <Content Include="testsparker_db_Cleaner.sql" />
+    <Content Include="UserControls\FoldersAndStaticPages\pear.sh" />
+    <Content Include="statics\write-us.jpg" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\CVS\Entries" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\CVS\Repository" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\CVS\Root" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\Web.config" />
+    <Content Include="UserControls\FoldersAndStaticPages\Web.config" />
+    <None Include="Properties\PublishProfiles\local_aspnet_ftp.pubxml" />
+    <Content Include="selenium\form\Actor.php" />
+    <Content Include="selenium\form\Engineer.php" />
+    <Content Include="selenium\form\index.php" />
+    <Content Include="selenium\form\register.php" />
+    <None Include="UserControls\FoldersAndStaticPages\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="UserControls\FoldersAndStaticPages\WS_FTP.log" />
+    <Content Include="UserControls\webconfigs\generics-Web.config-XSSProtectionDisabled" />
+    <Content Include="UserControls\webconfigs\images-Web.config-DirectoryListing%28IIS%29" />
+    <Content Include="UserControls\webconfigs\js-Web.config-ForbiddenResources" />
+    <Content Include="UserControls\webconfigs\panel-Web.config-BasicAuthorization" />
+    <Content Include="UserControls\webconfigs\scripts-Web.config-AccessMDB" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="website.publishproj" />
+    <None Include="Web.Stage.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="administrator\Login.aspx" />
+    <Content Include="Blog.aspx" />
+    <Content Include="Blogs.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Converter.aspx" />
+    <Content Include="ConverterResponse.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Guestbook.aspx" />
+    <Content Include="GuestbookList.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="statics\help-konu1.html" />
+    <Content Include="statics\help-yes.html" />
+    <Content Include="statics\btnBuyNowPricing.gif" />
+    <Content Include="statics\btnBuyNowPricingBlue.gif" />
+    <Content Include="statics\y.gif" />
+    <Content Include="LoggedUserDashboard.aspx" />
+    <Content Include="LoggedUserDashboard2.aspx" />
+    <Content Include="LoggedUserDashboards.ascx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Pricings.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="redirect.aspx" />
+    <Content Include="Request.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="statics\data.mdb" />
+    <Content Include="Shop.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\FormString.asp" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\test1.asp" />
+    <Content Include="UserControls\FoldersAndStaticPages\Generics\test1.txt" />
+    <Content Include="UserControls\FoldersAndStaticPages\help\help-konu1.html" />
+    <Content Include="UserControls\FoldersAndStaticPages\help\help-yes.html" />
+    <Content Include="UserControls\FoldersAndStaticPages\r57shell.html" />
+    <Content Include="UserControls\FoldersAndStaticPages\robots.txt" />
+    <Content Include="UserControls\FoldersAndStaticPages\sitemap.xml" />
+    <Content Include="UserControls\Pages\Blogs.ascx" />
+    <Content Include="UserControls\Pages\converterResponse-AjaxJsonSqlInjection.ascx" />
+    <Content Include="UserControls\Pages\LogoutProcess.ascx" />
+    <Content Include="UserControls\Pages\Shop.ascx" />
+    <Content Include="UserControls\Readme.txt" />
+    <Content Include="UserControls\Vulnerabilities\about-ReflectedCrossSiteScripting.ascx" />
+    <Content Include="UserControls\Vulnerabilities\about-WebServiceSQLInjections.ascx" />
+    <Content Include="UserControls\Vulnerabilities\administrator-default.ascx" />
+    <Content Include="UserControls\Vulnerabilities\blog-SQLInjections.ascx" />
+    <Content Include="UserControls\Vulnerabilities\contact-DatabaseConnectionStringDetected.ascx" />
+    <Content Include="UserControls\Vulnerabilities\contact-InsecureFrame%28External%29.ascx" />
+    <Content Include="UserControls\Vulnerabilities\contact-InternalIPDisclosure.ascx" />
+    <Content Include="UserControls\Vulnerabilities\contact.ascx" />
+    <Content Include="UserControls\Vulnerabilities\converter-AjaxJsonSqjInjection.ascx" />
+    <Content Include="UserControls\Vulnerabilities\default-Generics.ascx" />
+    <Content Include="UserControls\Vulnerabilities\guestbook-PermenantCrossSiteScripting.ascx" />
+    <Content Include="UserControls\Vulnerabilities\guestbooklist-PermenantCrossSiteScripting.ascx" />
+    <Content Include="UserControls\Vulnerabilities\help-LocalFileInclusion.ascx" />
+    <Content Include="UserControls\Vulnerabilities\login-CSRFinLoginDetected.ascx" />
+    <Content Include="UserControls\Vulnerabilities\pricings-DOMBasedXSS.ascx" />
+    <Content Include="UserControls\Vulnerabilities\products-SQLInjections.ascx" />
+    <Content Include="UserControls\Vulnerabilities\redirect-OpenRedirection.ascx" />
+    <Content Include="UserControls\Vulnerabilities\request-CSRFDetected.ascx" />
+    <Content Include="statics\download\Default.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WS_Search.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Converter.aspx.cs">
+      <DependentUpon>Converter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Converter.aspx.designer.cs">
+      <DependentUpon>Converter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConverterResponse.aspx.cs">
+      <DependentUpon>ConverterResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConverterResponse.aspx.designer.cs">
+      <DependentUpon>ConverterResponse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guestbook.aspx.cs">
+      <DependentUpon>Guestbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guestbook.aspx.designer.cs">
+      <DependentUpon>Guestbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestbookList.aspx.cs">
+      <DependentUpon>GuestbookList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestbookList.aspx.designer.cs">
+      <DependentUpon>GuestbookList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedUserDashboard.aspx.cs">
+      <DependentUpon>LoggedUserDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedUserDashboard.aspx.designer.cs">
+      <DependentUpon>LoggedUserDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedUserDashboard2.aspx.cs">
+      <DependentUpon>LoggedUserDashboard2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedUserDashboard2.aspx.designer.cs">
+      <DependentUpon>LoggedUserDashboard2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedUserDashboards.ascx.cs">
+      <DependentUpon>LoggedUserDashboards.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedUserDashboards.ascx.designer.cs">
+      <DependentUpon>LoggedUserDashboards.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.master.cs">
+      <DependentUpon>main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.master.designer.cs">
+      <DependentUpon>main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx.bak</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx.bak</DependentUpon>
+    </Compile>
+    <Compile Include="Pricings.aspx.cs">
+      <DependentUpon>Pricings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pricings.aspx.designer.cs">
+      <DependentUpon>Pricings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="redirect.aspx.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirect.aspx.designer.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Request.aspx.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Request.aspx.designer.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop.aspx.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop.aspx.designer.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Pages\Blogs.ascx.cs">
+      <DependentUpon>Blogs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pages\Blogs.ascx.designer.cs">
+      <DependentUpon>Blogs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Pages\converterResponse-AjaxJsonSqlInjection.ascx.cs">
+      <DependentUpon>converterResponse-AjaxJsonSqlInjection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pages\converterResponse-AjaxJsonSqlInjection.ascx.designer.cs">
+      <DependentUpon>converterResponse-AjaxJsonSqlInjection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Pages\LogoutProcess.ascx.cs">
+      <DependentUpon>LogoutProcess.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pages\LogoutProcess.ascx.designer.cs">
+      <DependentUpon>LogoutProcess.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Pages\Shop.ascx.cs">
+      <DependentUpon>Shop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pages\Shop.ascx.designer.cs">
+      <DependentUpon>Shop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\about-ReflectedCrossSiteScripting.ascx.cs">
+      <DependentUpon>about-ReflectedCrossSiteScripting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\about-ReflectedCrossSiteScripting.ascx.designer.cs">
+      <DependentUpon>about-ReflectedCrossSiteScripting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\about-WebServiceSQLInjections.ascx.cs">
+      <DependentUpon>about-WebServiceSQLInjections.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\about-WebServiceSQLInjections.ascx.designer.cs">
+      <DependentUpon>about-WebServiceSQLInjections.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\administrator-default.ascx.cs">
+      <DependentUpon>administrator-default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\administrator-default.ascx.designer.cs">
+      <DependentUpon>administrator-default.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\blog-SQLInjections.ascx.cs">
+      <DependentUpon>blog-SQLInjections.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\blog-SQLInjections.ascx.designer.cs">
+      <DependentUpon>blog-SQLInjections.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact-DatabaseConnectionStringDetected.ascx.cs">
+      <DependentUpon>contact-DatabaseConnectionStringDetected.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact-DatabaseConnectionStringDetected.ascx.designer.cs">
+      <DependentUpon>contact-DatabaseConnectionStringDetected.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact-InsecureFrame%28External%29.ascx.cs">
+      <DependentUpon>contact-InsecureFrame%28External%29.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact-InsecureFrame%28External%29.ascx.designer.cs">
+      <DependentUpon>contact-InsecureFrame%28External%29.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact-InternalIPDisclosure.ascx.cs">
+      <DependentUpon>contact-InternalIPDisclosure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact-InternalIPDisclosure.ascx.designer.cs">
+      <DependentUpon>contact-InternalIPDisclosure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact.ascx.cs">
+      <DependentUpon>contact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\contact.ascx.designer.cs">
+      <DependentUpon>contact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\converter-AjaxJsonSqjInjection.ascx.cs">
+      <DependentUpon>converter-AjaxJsonSqjInjection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\converter-AjaxJsonSqjInjection.ascx.designer.cs">
+      <DependentUpon>converter-AjaxJsonSqjInjection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\default-Generics.ascx.cs">
+      <DependentUpon>default-Generics.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\default-Generics.ascx.designer.cs">
+      <DependentUpon>default-Generics.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\guestbook-PermenantCrossSiteScripting.ascx.cs">
+      <DependentUpon>guestbook-PermenantCrossSiteScripting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\guestbook-PermenantCrossSiteScripting.ascx.designer.cs">
+      <DependentUpon>guestbook-PermenantCrossSiteScripting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\guestbooklist-PermenantCrossSiteScripting.ascx.cs">
+      <DependentUpon>guestbooklist-PermenantCrossSiteScripting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\guestbooklist-PermenantCrossSiteScripting.ascx.designer.cs">
+      <DependentUpon>guestbooklist-PermenantCrossSiteScripting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\help-LocalFileInclusion.ascx.cs">
+      <DependentUpon>help-LocalFileInclusion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\help-LocalFileInclusion.ascx.designer.cs">
+      <DependentUpon>help-LocalFileInclusion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\login-CSRFinLoginDetected.ascx.cs">
+      <DependentUpon>login-CSRFinLoginDetected.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\login-CSRFinLoginDetected.ascx.designer.cs">
+      <DependentUpon>login-CSRFinLoginDetected.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\pricings-DOMBasedXSS.ascx.cs">
+      <DependentUpon>pricings-DOMBasedXSS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\pricings-DOMBasedXSS.ascx.designer.cs">
+      <DependentUpon>pricings-DOMBasedXSS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\products-SQLInjections.ascx.cs">
+      <DependentUpon>products-SQLInjections.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\products-SQLInjections.ascx.designer.cs">
+      <DependentUpon>products-SQLInjections.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\redirect-OpenRedirection.ascx.cs">
+      <DependentUpon>redirect-OpenRedirection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\redirect-OpenRedirection.ascx.designer.cs">
+      <DependentUpon>redirect-OpenRedirection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\request-CSRFDetected.ascx.cs">
+      <DependentUpon>request-CSRFDetected.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Vulnerabilities\request-CSRFDetected.ascx.designer.cs">
+      <DependentUpon>request-CSRFDetected.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="statics\download\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="statics\download\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WS_Search.cs">
+      <DependentUpon>WS_Search.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="selenium\selenium-suite-for-apply-forms\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Stage|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37821</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36708/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

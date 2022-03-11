@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <httpProtocol>
+      <customHeaders>
+        <add name="X-XSS-Protection" value="0" />
+      </customHeaders>
+    </httpProtocol>
+  </system.webServer>
+</configuration>

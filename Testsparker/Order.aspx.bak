@@ -1,0 +1,154 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="Testsparker.Order" %>
+
+<asp:Content ID="contentOrder" ContentPlaceHolderID="contentCenterMenu" runat="server">
+
+    <div class="thumbnail">
+
+        <asp:MultiView ID="MultiView1" runat="server">
+            <asp:View ID="View1" runat="server">
+                <h1>Your Cart</h1>
+                <center><asp:Label ID="lblEntry" runat="server" Text=""></asp:Label></center>
+            </asp:View>
+            <asp:View ID="View2" runat="server">
+                <h1>Your Cart</h1>
+                <table style="width: 100%; margin: 5px;">
+                    <tr>
+                        <th style="width: 70%">Product</th>
+                        <th style="width: 20%">Price</th>
+                        <th style="width: 10%">Total</th>
+                    </tr>
+                    <asp:DataList ID="dlAllProducts" runat="server" DataKeyField="productId" DataSourceID="sqlFilteredProducts" RepeatLayout="Flow" RepeatDirection="Horizontal" ViewStateMode="Disabled" OnItemDataBound="dlAllProducts_ItemDataBound">
+                        <ItemTemplate>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lblProductName" runat="server" Text='<%#Eval("productName").ToString() %>' ViewStateMode="Disabled"></asp:Label></td>
+                                <td>
+                                    <asp:Label ID="lblPrice" runat="server" Text='<%#Eval("productPrice").ToString() %>' ViewStateMode="Disabled"></asp:Label>
+                                    BTC</td>
+                                <td>
+                                    <asp:Label ID="lblTotal" runat="server" Text='<%#Eval("productPrice").ToString() %>' ViewStateMode="Disabled"></asp:Label>
+                                    BTC</td>
+                            </tr>
+                        </ItemTemplate>
+                        <FooterTemplate>
+                            <tr style="border-top: 1px solid #cccccc;">
+                                <td></td>
+                                <td>
+                                    <br />
+                                    <strong>Total Payment:</strong></td>
+                                <td>
+                                    <br />
+                                    <%#dTotalPrice.ToString() %> BTC</td>
+                            </tr>
+                        </FooterTemplate>
+                    </asp:DataList>
+                    <tr>
+                        <td colspan="3" style="text-align: center;">
+                            <br />
+                            <br />
+                            <asp:Button ID="btnConfirm1" runat="server" Text="Buy Now" CssClass="btnConfirm" OnClick="btnConfirm1_Click" /><br />
+                            <br />
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </asp:View>
+            <asp:View ID="View3" runat="server">
+                <h1>Shipping Address</h1>
+                <div class="form-signin">
+                    <label>Name:</label>
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                    <label>Email:</label>
+                    <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
+                    <label>Phone:</label>
+                    <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
+                    <label>Address:</label>
+                    <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
+                    <br />
+                    <br />
+                    <center><asp:Button ID="btnConfirm2" runat="server" Text="Proceed to checkout" CssClass="btnConfirm" OnClick="btnConfirm2_Click" />
+                        </center>
+                    <br />
+                    <br />
+                </div>
+
+            </asp:View>
+            <asp:View ID="View4" runat="server">
+                <h1>Payment</h1>
+                <div class="form-signin" style="text-align: center;">
+                    Invoice #
+                    <asp:Label ID="lblConfirmation" runat="server" Text="Label"></asp:Label>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: right;">
+                                <label>Awaiting Payment:</label></td>
+                            <td style="width: 20px;"></td>
+                            <td style="text-align: left;">
+                                <label id="timer">15m 00s</label></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;">
+                                <label>Please Send Exactly:</label></td>
+                            <td style="width: 20px;"></td>
+                            <td style="text-align: left;">
+                                <asp:Label ID="lblAmount" runat="server" Text="Label"></asp:Label></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;">
+                                <label>To this Address:</label></td>
+                            <td style="width: 20px;"></td>
+                            <td style="text-align: left;">1Lj6e8dQRASKBv9vAyrytW1JLaenvGXZgP</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <img src="statics/qrcode.png" style="max-height: 450px;" />
+                    <br />
+                    <asp:Button ID="btnConfirm3" runat="server" Text="Confirm Payment" CssClass="btnConfirm" OnClick="btnConfirm3_Click" />
+                    <br />
+                    <br />
+                </div>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date();
+                    countDownDate.setMinutes(countDownDate.getMinutes() + 15);
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
+
+                        // Get todays date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now an the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id="timer"
+                        document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+                        // If the count down is finished, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("timer").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
+            </asp:View>
+            <asp:View ID="View5" runat="server">
+                <h1>Order Completed</h1>
+                <div class="form-signin" style="text-align: center;">
+                    <p>Your order has been completed.<br />Your order number is: <strong><%Response.Write(Request.QueryString["orderNo"].ToString()); %></strong></p>
+                    <p>From Monday to Friday (all orders received before 9:00 am) we will ship in 24 hour or less. Orders received on Friday after 9:00 am we will ship on Monday.</p>
+                </div>
+            </asp:View>
+        </asp:MultiView>
+    </div>
+
+    <asp:SqlDataSource ID="sqlFilteredProducts" runat="server" ConnectionString="<%$ ConnectionStrings:testsparkercs %>"
+        ViewStateMode="Disabled"></asp:SqlDataSource>
+
+</asp:Content>

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="True" Codebehind="contact-InternalIPDisclosure.ascx.cs" Inherits="UserControls_Vulnerabilities_contact_InternalIPDisclosure"  ViewStateMode="Disabled" EnableViewState="false"  %>
+<!-- Your IP Address: removed -->

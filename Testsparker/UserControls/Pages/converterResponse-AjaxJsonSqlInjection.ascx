@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="True" Codebehind="converterResponse-AjaxJsonSqlInjection.ascx.cs" Inherits="UserControls_Vulnerabilities_converterResponse_AjaxJsonSqlInjection"  ViewStateMode="Disabled" EnableViewState="false"  %>
